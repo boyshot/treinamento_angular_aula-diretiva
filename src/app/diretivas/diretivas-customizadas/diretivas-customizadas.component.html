@@ -1,0 +1,21 @@
+<p FundoAmarelo>
+    diretivas-customizadas works!</p>
+
+<button FundoAmarelo>Botão Teste</button>
+
+<p HighlightMouse>Texto com highlight quando passo o mouse</p>
+
+<p [Highlight]="'red'" [defaultColor]="'grey'">
+    Texto com highlight com cores customizadas
+</p>
+
+
+<br>
+
+<button (click)="onMostrarCursos()"> Mostrar ou Esconder Cursos </button>
+
+<br>
+<p *ngIf="mostrarCurso">Angula, C#, Java, PHP</p>
+<br>
+
+<p *ngElse="!mostrarCurso">Diretiva Else: Angula, C#, Java, PHP</p>
